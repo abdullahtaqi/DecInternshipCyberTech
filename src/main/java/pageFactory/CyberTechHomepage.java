@@ -67,7 +67,23 @@ public class CyberTechHomepage extends BaseClass  {
 	//WebElement blog; 
 	By blog = By.xpath("//a[contains(text(),'Blog')]");
 	
-	// *** FOOTER LINKS - JASVIR ***
+	// *** FOOTER LINKS ******** JASVIR*********************
+
+	By FacebookLink = By.xpath("/html/body/footer/div/div[1]/div/div[1]/div/a[4]");
+	By TwitterLink = By.xpath("/html/body/footer/div/div[1]/div/div[2]/div/a[4]");
+	By LinkedInLink = By.xpath("/html/body/footer/div/div[1]/div/div[3]/div/a[4]");
+	By YouTubeLink = By.xpath("/html/body/footer/div/div[1]/div/div[4]/div/a[4]");
+	
+	// our training  - ***********JASVIR************
+	By trainCourse1 = By.xpath("//a[text()='Training Course 1']");
+	By trainCourse2 = By.xpath("//a[text()='Training course 2']");
+	
+	// join us **************JASVIR******************
+	By joinUsCont = By.xpath("//li[@id='menu-item-79']");
+	By instruRegistration = By.xpath("//*[@id=\"menu-item-80\"]/a");
+	By studentRegistration = By.xpath("//*[@id=\"menu-item-81\"]/a");
+	By corporatetrain= By.xpath("//*[@id=\"menu-item-83\"]/a");
+
 	
 	//*** SIGN UP - BINAY ***
 	
@@ -156,7 +172,40 @@ public class CyberTechHomepage extends BaseClass  {
 	}
 	
 	
+	//********************* Jasvir************************
 	
+		public void clickSocialMedia(By FacebookLink) {
+			driver.findElement(FacebookLink).click();
+		}
+		public void clickSocialMedia1(By TwitterLink) {
+			driver.findElement(TwitterLink).click();
+		}
+		public void clickSocialMedia2(By LinkedInLink) {
+			driver.findElement(LinkedInLink).click();
+		}
+
+		public void clickSocialMedia3(By YouTubeLink) {
+			driver.findElement(YouTubeLink).click();
+		}
+		public void trainCourse1(By trainCourse1) {
+			driver.findElement(trainCourse1).click();
+		}
+		public void joinUsCont(By joinUsCont) {
+			driver.findElement(joinUsCont).click();
+		}
+		public void instruRegistration(By instruRegistration) {
+			driver.findElement(instruRegistration).click();
+		}
+		public void studentRegistration(By studentRegistration) {
+			driver.findElement(studentRegistration).click();
+		}
+		public void corporatetrain(By  corporatetrain) {
+			driver.findElement( corporatetrain).click();
+		}
+		public void trainCourse2(By trainCourse2) {
+			driver.findElement(trainCourse2).click();
+		}
+
 	
 	
 	}

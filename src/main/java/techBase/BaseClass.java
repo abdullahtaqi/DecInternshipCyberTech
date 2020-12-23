@@ -25,8 +25,7 @@ public BaseClass() {
 	prop = new Properties();
 	
 		try {
-			FileInputStream cb = new FileInputStream ("/Users/zebaislam/Desktop/CyberTech/src/"
-					+ "main/java/properties/cyberTech.properties");
+			FileInputStream cb = new FileInputStream ("C:\\Users\\sukhm\\git\\DecInternshipCyberTech\\src\\main\\java\\properties\\cyberTech.properties");
 		  try {
 			prop.load(cb);
 		} catch (IOException e) {
