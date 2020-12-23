@@ -82,7 +82,11 @@ public class CyberTechHomepage extends BaseClass  {
 	By joinUsCont = By.xpath("//li[@id='menu-item-79']");
 	By instruRegistration = By.xpath("//*[@id=\"menu-item-80\"]/a");
 	By studentRegistration = By.xpath("//*[@id=\"menu-item-81\"]/a");
-	By corporatetrain= By.xpath("//*[@id=\"menu-item-83\"]/a");
+	By corporatetrain= By.xpath("//*[@id=\"menu-item-82\"]/a");
+	
+	// Useful  Links***********JASVIR*******************
+	By ContactUsLink = By.xpath("//*[@id=\"menu-item-83\"]/a");
+	By corpTraining = By.xpath("//*[@id=\"menu-item-84\"]/a");
 
 	
 	//*** SIGN UP - BINAY ***
@@ -204,6 +208,12 @@ public class CyberTechHomepage extends BaseClass  {
 		}
 		public void trainCourse2(By trainCourse2) {
 			driver.findElement(trainCourse2).click();
+		}
+		public void ContactUsLink(By ContactUsLink) {
+			driver.findElement(ContactUsLink).click();
+		}
+		public void  corpTraining(By corpTraining) {
+			driver.findElement(corpTraining).click();
 		}
 
 	
